@@ -22,10 +22,10 @@ pull request - push branch/pull from origin develop
 merge to dev or master - got to branch/click merge / delete branch
 
 > workflow: 
->-`git checkout develop` 
->-`git pull`
->-`git checkout featureBranch`
->-`git merge develop` (maybe with "--no-ff --no-commit" options)
+> -`git checkout develop` 
+> -`git pull`
+> -`git checkout featureBranch`
+> -`git merge develop` (maybe with "--no-ff --no-commit" options)
 > **add/commit/pull/push**
 
 `git reset fileName`  -> removes that file from staging
