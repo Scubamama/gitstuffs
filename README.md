@@ -21,8 +21,12 @@ merge conflicts - start at bottom and work up
 pull request - push branch/pull from origin develop
 merge to dev or master - got to branch/click merge / delete branch
 
-> workflow: *`git checkout develop` -`git pull`-`git checkout featureBranch`-`git merge develop` (maybe with "--no-ff --no-commit" options)
-> add/commit/pull/push
+> workflow: 
+>-`git checkout develop` 
+>-`git pull`
+>-`git checkout featureBranch`
+>-`git merge develop` (maybe with "--no-ff --no-commit" options)
+> **add/commit/pull/push**
 
 `git reset fileName`  -> removes that file from staging
 on branch: `git pull origin master(or other remote branch)`  -> pulls that remote into current branch
