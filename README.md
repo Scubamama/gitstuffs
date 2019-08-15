@@ -21,7 +21,7 @@ merge conflicts - start at bottom and work up
 pull request - push branch/pull from origin develop
 merge to dev or master - got to branch/click merge / delete branch
 
-> workflow: `git checkout develop`/`git pull`/`git checkout featureBranch`/`git merge develop` (maybe with "--no-ff --no-commit" options)
+> workflow: *`git checkout develop` -`git pull`-`git checkout featureBranch`-`git merge develop` (maybe with "--no-ff --no-commit" options)
 > add/commit/pull/push
 
 `git reset fileName`  -> removes that file from staging
@@ -31,7 +31,7 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 `git branch -d <branchname>`   -> deletes branch branchname 
 `git branch newBranchName`   -> creates a new branch named newBranchName
   
-`git stash` --> use with extreme caution
+`git stash` --> **use with extreme caution**
 `git stash apply`
 `git stash list`
 > git checkout failed due to untracked files - find out what is going on with those files and probably delete them this is a merge conflict
