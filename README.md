@@ -40,7 +40,7 @@ git commit -m "Finish a feature"
 # Merge in the new-feature branch
 git checkout master
 git merge new-feature
-git branch -d new-feature```
+git branch -d new-feature ```
 
 `git reset fileName`  -> removes that file from staging
 on branch: `git pull origin master(or other remote branch)`  -> pulls that remote into current branch
