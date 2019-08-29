@@ -73,5 +73,5 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 `git log --since="3 days ago"`   or "today" or "yesterday"
 `git log -- fileName`   -> just shows that filename
 
-
+`git fetch --prune` gets rid of branches that aren't really there
 
