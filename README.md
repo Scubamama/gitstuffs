@@ -19,8 +19,8 @@ pull = fetch + merge  -> bringing remote changes into my local repo
 
 `git reset --hard commitId`   -> puts you back to that commit
 
-am - fetch on dev/fetch on feature branch/if there are changes on dev switch and pull 
-pm - commit/push to remote
+>*am - fetch on dev/fetch on feature branch/if there are changes on dev switch and pull 
+>*pm - commit/push to remote
 
 merge conflicts - start at bottom and work up
 pull request - push branch/pull from origin develop
