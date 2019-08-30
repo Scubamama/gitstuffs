@@ -5,7 +5,9 @@
 `git branch -a`  -> shows all branches local and remote
 
 `git add -A`  -> adds all
+
 `git add -u`   -> adds modified only
+
 `git add . `  -> adds all files in sub directories as well 
 
 > origin = remote
