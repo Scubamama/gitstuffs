@@ -6,14 +6,17 @@
 
 `git add -A`  -> adds all
 
-`git add -u`   -> adds modified only
+`git add -u`  -> adds modified only
 
 `git add . `  -> adds all files in sub directories as well 
 
 > origin = remote
 pull = fetch + merge  -> bringing remote changes into my local repo
+
 `git reset`   -> pulls branch from last commit
+
 `git reset --hard head`     -> puts you back to where you were before changes
+
 `git reset --hard commitId`   -> puts you back to that commit
 
 am - fetch on dev/fetch on feature branch/if there are changes on dev switch and pull 
