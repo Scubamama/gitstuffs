@@ -34,20 +34,20 @@ merge to dev or master - got to branch/click merge / delete branch
 
 **basic workflow: add/commit/pull/push**
 
-** Start a new feature workflow **
-git checkout -b new-feature master
-** Edit some files **
-```
-git add <file>
-git commit -m "Start a feature"
-# Edit some files
-git add <file>
-git commit -m "Finish a feature"
-# Merge in the new-feature branch
-git checkout master
-git merge new-feature
-git branch -d new-feature 
-```
+>** Start a new feature workflow **
+>```
+>git checkout -b new-feature master
+>** Edit some files **
+>git add <file>
+>git commit -m "Start a feature"
+># Edit some files
+>git add <file>
+>git commit -m "Finish a feature"
+># Merge in the new-feature branch
+>git checkout master
+>git merge new-feature
+>git branch -d new-feature 
+>```
 
 `git reset fileName`  -> removes that file from staging
 
