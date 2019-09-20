@@ -93,3 +93,4 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 
 `git fetch --prune` gets rid of branches that aren't really there
 
+`git diff HEAD`    shows differences between current and last commit
