@@ -15,7 +15,7 @@ pull = fetch + merge  -> bringing remote changes into my local repo
 
 `git reset`   -> pulls branch from last commit
 
-`git reset --hard head`     -> puts you back to where you were before changes
+`git reset --hard head`     -> puts you back to last commit
 
 `git reset --hard commitId`   -> puts you back to that commit
 
