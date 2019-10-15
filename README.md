@@ -121,9 +121,13 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 >git clean -f -d
 >```
 or for wrong branch work you can use cherry-pick - this adds the commit to the correctBranch
+
 `git checkout correctBranch`
+
 `git cherry-pick commithash`
+
 `git checkout incorrectBranch`
+
 `git reset hard previousCommithash`
 
 `git revert 7d741e`  -> removes all changes in commit 7d741e (used if commit is pushed to remote)
