@@ -79,7 +79,17 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 
 `git stash apply`
 
-`git stash list`
+`git stash apply stash@{0}`  where {0} is the number (entry index) you get from git stash list
+
+`git stash pop entryIndex`  -> apply the stash and delete it
+
+`git stash list`   -> shows all stashes
+
+`git stash drop entryIndex`  -> deletes the stash   If you want to pop, apply, or drop first stash entry, then entryIndex is optional.
+
+`git stash clean`  ->  cleans (clears) all items off of stash list
+
+`git stash save subtract-work`  -> names a stash so it is easier to find later
 
 > git checkout failed due to untracked files - find out what is going on with those files and probably delete them this is a merge conflict
 
@@ -122,15 +132,15 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 >```
 or for wrong branch work you can use cherry-pick - this adds the commit to the correctBranch
 
-`git checkout correctBranch`
+>git checkout correctBranch
 
-`git cherry-pick commithash`
+>git cherry-pick commithash
 
-`git checkout incorrectBranch`
+>git checkout incorrectBranch
 
-`git reset hard previousCommithash`
+>git reset hard previousCommithash
 
-`git revert 7d741e`  -> removes all changes in commit 7d741e (used if commit is pushed to remote)
+>git revert 7d741e  -> removes all changes in commit 7d741e (used if commit is pushed to remote)
 
 to export without intellij artifacts:
 `git archive --format zip --output "output.zip" branchName -0'  puts it in a zip file called output.zip using branch branchName uncompressed (-0)  see git-scm.com/docs/git-archive 
