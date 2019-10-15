@@ -127,3 +127,6 @@ or for wrong branch work you can use cherry-pick - this adds the commit to the c
 `git reset hard previousCommithash`
 
 `git revert 7d741e`  -> removes all changes in commit 7d741e (used if commit is pushed to remote)
+
+to export without intellij artifacts:
+`git archive --format zip --output "output.zip" branchName -0'  puts it in a zip file called output.zip using branch branchName uncompressed (-0)  see git-scm.com/docs/git-archive 
