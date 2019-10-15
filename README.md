@@ -4,11 +4,23 @@
 `git branch -r`  -> shows all remote branches  
 `git branch -a`  -> shows all branches local and remote
 
+`git branch --merged`   -> shows all branches merged into current branch
+
+`git branch -v`   -> shows last commit on each branch
+
+`git branch -d branch1 branch2....`   -> deletes multiple branches in one command
+
+`git push --delete origin branchName`  -> deletes the remote branch
+
 `git add -A`  -> adds all
 
 `git add -u`  -> adds modified only
 
 `git add . `  -> adds all files in sub directories as well 
+
+`git commit --amend -m "Changed Commit Message"    -> change the message of the previous commit
+
+`git commit -am “divide function available”`      -> add and commit all the modified files, but not newly created files
 
 > origin = remote
 pull = fetch + merge  -> bringing remote changes into my local repo
@@ -25,6 +37,8 @@ pull = fetch + merge  -> bringing remote changes into my local repo
 merge conflicts - start at bottom and work up
 pull request - push branch/pull from origin develop
 merge to dev or master - got to branch/click merge / delete branch
+
+commits do not belong to any branch. They are unique and branches only reference them.
 
 > workflow: per Jim
 > - `git checkout develop` 
@@ -96,3 +110,20 @@ on branch: `git pull origin master(or other remote branch)`  -> pulls that remot
 `git diff HEAD`    shows differences between current and last commit
 
 `git mergetool`    ui merge conflict resolution tool
+
+`git reflog` -> prints a complete list of previous operations
+
+>** Wrong branch workflow **
+>```
+>git checkout -b new-feature 
+>git checkout dev (or wrong branch)
+>git reset --hard commitNumber
+>git clean -f -d
+>```
+or for wrong branch work you can use cherry-pick - this adds the commit to the correctBranch
+`git checkout correctBranch`
+`git cherry-pick commithash`
+`git checkout incorrectBranch`
+`git reset hard previousCommithash`
+
+`git revert 7d741e`  -> removes all changes in commit 7d741e (used if commit is pushed to remote)
