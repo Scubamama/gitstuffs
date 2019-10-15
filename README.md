@@ -26,7 +26,7 @@ merge conflicts - start at bottom and work up
 pull request - push branch/pull from origin develop
 merge to dev or master - got to branch/click merge / delete branch
 
-> workflow: 
+> workflow: per Jim
 > - `git checkout develop` 
 > - `git pull`
 > - `git checkout featureBranch`
